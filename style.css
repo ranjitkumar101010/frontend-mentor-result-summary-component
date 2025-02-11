@@ -1,0 +1,246 @@
+@font-face {
+    font-family: Hanken;
+    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Hanken;
+    background-color: #ecf2ff;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 737px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px #d1dffc;
+  }
+
+  .score-section {
+    background-image: linear-gradient(180deg, #6c5cff, #5146c5);
+    padding: 30px 65px;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .score-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d6dafd;
+  }
+
+  .score-circle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      180deg,
+      hsla(256, 72%, 46%, 1),
+      HSLA(241, 72%, 46%, 0)
+    );
+    border-radius: 50%;
+    padding: 55px 70px;
+  }
+
+  .score {
+    font-size: 55px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .total-score {
+    color: #8d80ff;
+    font-size: 16px;
+    margin-top: -5px;
+  }
+
+  .score-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .score-content span {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .score-content p {
+    color: #c1bbff;
+    font-size: 16px;
+  }
+
+  .summary-section {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .summary-section h2 {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .score-row {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    background-color: #e6e6e6;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .summary-section span {
+    color: #9ea2ae;
+  }
+
+  .summary-section span b {
+    color: #323c55;
+  }
+
+  .reaction {
+    background-color: #fff6f7;
+  }
+
+  .reaction .label span {
+    color: hsl(0, 100%, 67%);
+  }
+
+  .memory {
+    background-color: #fffaf4;
+  }
+
+  .memory .label span {
+    color: hsl(39, 100%, 56%);
+  }
+
+  .verbal {
+    background-color: #f2fdf9;
+  }
+
+  .verbal .label span {
+    color: hsl(166, 100%, 37%);
+  }
+
+  .visual {
+    background-color: #f4f4fe;
+  }
+
+  .visual .label span {
+    color: hsl(234, 85%, 45%);
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-image: linear-gradient(180deg, #694ed9, #302be7);
+    border-radius: 20px;
+    color: #fcf9ff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background-image: linear-gradient(180deg, #2f3c59, #2f3c59);
+  }
+
+  footer {
+    padding: 10px;
+    background-color: white;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 375px) {
+    .wrapper {
+      height: 100%;
+    }
+
+    .container {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .score-section,
+    .summary-section {
+      width: 100%;
+    }
+
+    .score-section {
+      border-radius: 0px 0px 20px 20px;
+      gap: 20px;
+    }
+
+    .score-section h2 {
+      font-size: 16px;
+    }
+
+    .score-circle {
+      padding: 35px 50px;
+    }
+
+    .score {
+      font-size: 55px;
+    }
+
+    .total-score {
+      font-size: 16px;
+    }
+
+    .score-content span {
+      font-size: 24px;
+    }
+
+    .score-content p {
+      font-size: 14px;
+    }
+
+    .summary-section h2 {
+      font-size: 16px;
+    }
+  }
